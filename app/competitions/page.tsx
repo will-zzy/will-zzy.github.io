@@ -21,6 +21,7 @@ export default function CompetitionsPage() {
             <article key={award.title}>
               <span>0{index + 1}</span>
               <div>
+                <p className="award-date">{award.date}</p>
                 <h3>{award.title}</h3>
                 <p>{award.result}</p>
                 {award.links.length > 0 && (

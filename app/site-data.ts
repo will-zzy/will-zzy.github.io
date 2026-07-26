@@ -107,6 +107,7 @@ export const experiences = [
 
 export const awards = [
   {
+    date: "2025",
     title: "SIGGRAPH Asia 2025 3DGS 挑战赛",
     result: "第 1 名 · 48 支队伍",
     links: [
@@ -115,11 +116,13 @@ export const awards = [
     ],
   },
   {
+    date: "2025",
     title: "CAD/CG 2025 高精度三维重建挑战赛",
     result: "第 1 名 · 领先第 2 名 10 分",
     links: [{ label: "Demo", href: "#cadcg-demo" }],
   },
   {
+    date: "2025",
     title: "ICRA 2025 Sim2Real 挑战赛",
     result: "第 2 名",
     links: [],

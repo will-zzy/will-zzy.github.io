@@ -22,8 +22,8 @@ export default function HomePage() {
         </p>
         <p className="intro-lead">
           我的研究聚焦于 3D 深度学习、神经渲染与高质量表面重建，
-          尤其关注 Gaussian Splatting 的几何表示、可微渲染与 CUDA
-          工程实现。我独立完成多项研究的理论推导、代码实现、实验与论文撰写，
+          尤其关注 Gaussian Splatting 的几何表示、可微渲染、CUDA
+          工程实现与 3D AIGC。我独立完成多项研究的理论推导、代码实现、实验与论文撰写，
           并希望将三维技术应用于具身智能、自动驾驶与真实世界系统。
         </p>
 
