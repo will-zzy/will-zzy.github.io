@@ -196,6 +196,11 @@ a:focus-visible {
   font-size: 15px;
 }
 
+.institution-line a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #b9dbe5;
+}
+
 .intro-lead {
   max-width: 790px;
   margin: 34px 0 0;
@@ -237,11 +242,96 @@ a:focus-visible {
   content: "–";
 }
 
+.featured-works {
+  margin-top: 36px;
+}
+
+.featured-works-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.featured-works-heading h3 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 15px;
+}
+
+.featured-works-heading span {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.featured-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.featured-work {
+  min-width: 0;
+  padding: 21px 18px 22px;
+}
+
+.featured-work + .featured-work {
+  border-left: 1px solid var(--line);
+}
+
+.featured-work-venue {
+  margin: 0 0 7px;
+  color: var(--link-dark);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.featured-work h4 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+}
+
+.featured-work-summary {
+  margin: 10px 0 0;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.featured-work-result {
+  margin: 10px 0 0;
+  color: var(--heading);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.featured-work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  margin-top: 12px;
+}
+
+.featured-work-links a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #b9dbe5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .home-links {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  margin-top: 38px;
+  margin-top: 28px;
 }
 
 .home-links a,
@@ -250,6 +340,25 @@ a:focus-visible {
   padding-bottom: 2px;
   border-bottom: 1px solid #b9dbe5;
   font-size: 13px;
+  font-weight: 600;
+}
+
+.home-education {
+  margin-top: 58px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.home-education .featured-works-heading {
+  margin-bottom: 14px;
+}
+
+.education-affiliation-link {
+  display: inline-block;
+  margin-top: 7px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #b9dbe5;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -707,6 +816,20 @@ footer p {
 
   .intro-lead {
     font-size: 15px;
+  }
+
+  .featured-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-work + .featured-work {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .featured-work {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .content-section {
